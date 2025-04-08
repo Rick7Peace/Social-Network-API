@@ -1,5 +1,12 @@
 import { Schema, Types } from 'mongoose';
 import { dateFormat } from '../utils/dateFormat.js';
+
+export interface IReaction {
+    reactionId: Types.ObjectId;
+    reactionBody: string;
+    username: string;
+    createdAt: Date;
+}
 const reactionSchema = new Schema({
     reactionId: {
         type: Schema.Types.ObjectId,

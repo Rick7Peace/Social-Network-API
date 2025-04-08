@@ -2,7 +2,12 @@ import { Schema, model, Document } from 'mongoose';
 import reactionSchema from './Reaction.js';
 import { dateFormat } from '../utils/dateFormat.js';
 
-
+export interface IReaction {
+    reactionId: Schema.Types.ObjectId;
+    reactionBody: string;
+    username: string;
+    createdAt: Date;
+}
 export interface IThought extends Document {
     thoughtText: String;
     createdAt: Date;
@@ -35,7 +40,7 @@ const thoughtSchema = new Schema({
     timestamps: true,
     id: false
 });
-thoughtSchema.virtual('reactionCount').get(function () {
+thoughtSchema.virtual('reactionCount').get(function (this: IThought) {
     return this.reactions.length;
 });
 const Thought = model('Thought', thoughtSchema);
