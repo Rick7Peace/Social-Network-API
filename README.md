@@ -65,7 +65,7 @@ DELETE	/api/thoughts/:thoughtId	Delete a thought by ID
 POST	/api/thoughts/:thoughtId/reactions	Add a reaction to a thought
 DELETE	/api/thoughts/:thoughtId/reactions/:reactionId	Delete a reaction from a thought
 # Walkthrough Video
-Link to walkthrough video https://drive.google.com/file/d/1gia0WeRbcYaNqjkZcO0_XnNQXffBbDWK/view?usp=sharing
+Link to walkthrough video https://drive.google.com/file/d/1Y1ZqMUVBBp-D_LlsCgKpyhFSZ4MmyADt/view?usp=sharing
 
 
 # Bonus Feature
@@ -80,4 +80,5 @@ MIT
 Contact me via
 
 Github: https://github.com/Rick7Peace
+
 Email: marmolejo.ricardo@gmail.com
